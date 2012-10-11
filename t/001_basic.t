@@ -5,7 +5,6 @@ use Net::CoverArtArchive;
 
 plan;
 
-# these still hit the live server and need to be mocked
 test_instantiate();
 
 sub test_instantiate {
