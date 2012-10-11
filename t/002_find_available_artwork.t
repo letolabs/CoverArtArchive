@@ -7,10 +7,12 @@ use Data::Dumper;
 
 plan;
 
+my $release_id = '76df3287-6cda-33eb-8e9a-044b5e15ffdd';
+
 my $caa = Net::CoverArtArchive->new;
 
 lives_ok( sub {
-    my $all_artwork = $caa->find_available_artwork('4331ea73-77e1-3213-a840-5e4e74180f93');
+    my $all_artwork = $caa->find_available_artwork($release_id);
 }, 'find_available_artwork lives');
 
 done_testing;
